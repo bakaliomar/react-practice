@@ -1,12 +1,12 @@
 import './App.css';
 //import ProjectsPage from './projects/ProjectsPage';
 //import Hello from './Helo';
-import HelloSecond from "./HelloSecond";
+import Hello from './HelloThird';
 
 function App() {
   return (
     <div className='container'>
-      <HelloSecond name="Susan" enthusiasmLevel={8} />
+      <Hello name="Susan" enthusiasmLevel={4} />
     </div>
   );
 }
