@@ -1,4 +1,4 @@
-import React from "react";
+import React, { SyntheticEvent } from "react";
 
 export interface Props {
   name: string;
@@ -12,11 +12,13 @@ interface State {
 class Hello extends React.Component<Props, State> {
   state = { currentEnthusiasm: this.props.enthusiasmLevel || 1 };
 
-  onIncrement = () => {
+  onIncrement = (event: SyntheticEvent) => {
+    console.log(event);
     this.updateEnthusiasm(1);
   };
 
-  onDecrement = () => {
+  onDecrement = (evenet: SyntheticEvent) => {
+    console.log(evenet.target);
     this.updateEnthusiasm(-1);
   };
 
