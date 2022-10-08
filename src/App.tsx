@@ -1,12 +1,10 @@
 import './App.css';
-//import ProjectsPage from './projects/ProjectsPage';
-//import Hello from './Helo';
-import Hello from './HelloThird';
+import ProjectsPage from './projects/ProjectsPage';
 
 function App() {
   return (
     <div className='container'>
-      <Hello name="Susan" enthusiasmLevel={4} />
+      <ProjectsPage />
     </div>
   );
 }
