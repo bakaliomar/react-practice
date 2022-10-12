@@ -3,11 +3,12 @@ import { Project } from "./Project";
 
 export interface ProjectCardProps {
   project: Project;
+  onEdit: (project: Project) => void;
 }
 
-function ProjectCard({ project }: ProjectCardProps) {
+function ProjectCard({ project, onEdit }: ProjectCardProps) {
   const handleEditClick = (proejectBeingEdited: Project) => {
-    console.log(proejectBeingEdited);
+    onEdit(proejectBeingEdited);
   }
   return (
     <div className="card">
